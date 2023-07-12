@@ -7,8 +7,7 @@ import SectionCard from "./SectionCard";
 import Dropdown from "./Dropdown";
 
 function Section() {
-  const [{ token }, dispatch] = useServiceProviderValue();
-  const [{ user }] = useServiceProviderValue();
+  const [{ user, token }, dispatch] = useServiceProviderValue();
   const options = [
     { value: "Account", id: 0 },
     { value: "Profile", id: 1 },
